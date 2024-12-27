@@ -1,6 +1,7 @@
 # 🖥️ Cloud Terminal Project
 
-> A memory-safe cloud terminal emulator built with Ghostty and Zig
+> A memory-safe cloud terminal emulator built with Ghostty and Zig. The Mac build is an absolute delight.
+> Go here for more details: [Ghostty](https://ghostty.org/) Dig the repo [here](https://github.com/ghostty-org/ghostty)
 
 <details>
 <summary>Table of Contents</summary>
@@ -21,8 +22,8 @@
 This project implements a secure, cloud-native terminal emulator using:
 - 🛡️ Memory-safe Zig implementation
 - 🐋 Container-based isolation
-- 🌐 WebAssembly for client-side rendering
-- 🔒 End-to-end encryption
+- 🌐 WebAssembly for client-side rendering (future perhaps)
+- 🔒 End-to-end encryption 
 
 ## 🏗️ Architecture
 
