@@ -1,0 +1,19 @@
+iapiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: terminal-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: terminal
+  template:
+    metadata:
+      labels:
+        app: terminal
+    spec:
+      containers:
+      - name: terminal
+        image: gcr.io/${PROJECT_ID}/cloud-terminal:latest
+        ports:
+        - containerPort: 8080
