@@ -26,9 +26,12 @@ RUN apt-get update && apt-get install -y \
 # Clone and build Ghostty
 RUN git clone https://github.com/ghostty-org/ghostty.git \
     && cd ghostty \
-    && zig build -Doptimize=ReleaseSafe
+    && zig build 
+
+#-Doptimize=ReleaseSafe
 
 WORKDIR /app
 COPY . .
 
-CMD ["./start.sh"]
+#CMD ["./start.sh"]
+#CMD ["./ghostty.sh"]

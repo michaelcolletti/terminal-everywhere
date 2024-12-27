@@ -32,18 +32,23 @@ flowchart TD
     classDef security fill:#e6ffe6,stroke:#333,stroke-width:2px
     classDef container fill:#fff5e6,stroke:#333,stroke-width:2px
 
-    Client[🌐 Browser Client]:::cloud -->|WSS| LB[⚖️ Load Balancer]
-    LB --> Pod1[📦 Terminal Pod]:::container
-    LB --> Pod2[📦 Terminal Pod]:::container
+    Client[Browser Client] -->|WSS| LB[Load Balancer]
+    LB --> Pod1[Terminal Pod]
+    LB --> Pod2[Terminal Pod]
     
-    subgraph "🔐 Security Layer":::security
-        Auth[🔑 Authentication]
-        RBAC[📜 RBAC]
-        Network[🌐 Network Policy]
+    subgraph Security
+        Auth[Authentication]
+        RBAC[RBAC]
+        Network[Network Policy]
     end
 
     Auth --> Pod1
     Auth --> Pod2
+
+    Client:::cloud
+    Security:::security
+    Pod1:::container
+    Pod2:::container
 ```
 
 ## 📋 Prerequisites
