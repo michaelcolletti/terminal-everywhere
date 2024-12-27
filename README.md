@@ -21,9 +21,9 @@
 
 This project implements a secure, cloud-native terminal emulator using:
 - 🛡️ Memory-safe Zig implementation
-- 🐋 Container-based isolation
-- 🌐 WebAssembly for client-side rendering (future perhaps)
-- 🔒 End-to-end encryption 
+- 🐋 Container-based isolation 
+- 🌐 WebAssembly for client-side rendering (TBD)
+- 🔒 End-to-end encryption  (TBD)
 
 ## 🏗️ Architecture
 
